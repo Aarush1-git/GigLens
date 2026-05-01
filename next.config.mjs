@@ -1,6 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        // When someone visits the root domain...
+        source: '/',
+        // ...serve them the static HTML file
+        destination: '/index.html',
+      }
+    ]
+  }
 };
 
 export default nextConfig;

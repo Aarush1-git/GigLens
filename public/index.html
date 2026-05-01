@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigLens | Stop guessing your real gig income.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%);
+        }
+
+        /* Custom DoorDash-style Pill */
+        .cta-pill {
+            border-radius: 9999px;
+            transition: transform 0.2s ease;
+        }
+
+        .cta-pill:hover {
+            transform: scale(1.02);
+        }
+
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Netflix-style Dividers but softer */
+        .section-divider {
+            border-bottom: 8px solid #222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="absolute top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-[#F97316] rounded-lg flex items-center justify-center text-white font-bold">G</div>
+            <span class="font-['Syne'] font-extrabold text-2xl tracking-tight">GigLens</span>
+        </div>
+        <a href="/dashboard"
+            class="bg-white text-black px-6 py-2 rounded-full font-bold text-sm hover:bg-gray-200 transition-all">Sign
+            In</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[85vh] flex items-center justify-center overflow-hidden section-divider">
+        <!-- Background Image with Netflix-style overlay -->
+        <div
+            class="absolute inset-0 bg-[url('https://tse1.mm.bing.net/th/id/OIP.C2s-sLeydGS182H75JQs3gHaDt?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3')] bg-cover bg-center">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-['Syne'] font-extrabold mb-6 leading-tight">
+                Stop guessing your<br><span class="text-[#F97316]">real gig income</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-200">Start tracking and maximizing your gig earnings today.
+            </p>
+
+            <div
+                class="flex flex-col md:flex-row items-center justify-center gap-3 w-full max-w-2xl mx-auto bg-white p-2 rounded-2xl md:rounded-full shadow-2xl">
+                <input type="email" placeholder="Email address"
+                    class="w-full md:flex-1 px-6 py-4 text-black outline-none rounded-full text-lg">
+                <a href="/"
+                    class="w-full md:w-auto bg-[#EB1700] text-white px-10 py-4 cta-pill font-bold text-xl hover:bg-red-700 transition-all whitespace-nowrap">
+                    Get Started
+                </a>
+            </div>
+            <p class="mt-6 text-sm text-gray-400">Ready to track? Enter your email to create your account.</p>
+        </div>
+    </header>
+
+    <!-- Feature 1: The "TV" Style with DoorDash Rounding -->
+    <!-- Feature 1: Portrait Phone Mockup -->
+    <section class="py-20 px-6 section-divider">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-4xl md:text-5xl font-['Syne'] font-extrabold mb-6">Enjoy on your mobile.</h2>
+                <p class="text-xl text-gray-400 leading-relaxed">
+                    Watch your profits grow with real-time analytics. Optimized for your mobile browser so you can track
+                    on the go.
+                </p>
+            </div>
+            <!-- Portrait Container -->
+            <div class="md:w-1/2 flex justify-center">
+                <div
+                    class="relative w-[280px] h-[580px] bg-black p-3 rounded-[3rem] border-[8px] border-[#222] shadow-2xl">
+                    <img src="image.png" alt="GigLens Portrait Dashboard"
+                        class="rounded-[2.2rem] w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 2: Download Style (Clean DoorDash White Cards) -->
+    <section class="py-20 px-6 section-divider">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 order-2 md:order-1 flex justify-center">
+                <div
+                    class="w-full bg-[#111] aspect-video rounded-[2rem] border border-gray-800 flex items-center justify-center p-8">
+                    <!-- Replace with your 'Your Gigs' section screenshot image_4a533b.png -->
+                    <img src="Laptop_view.png" class="rounded-xl shadow-lg border border-gray-700">
+                </div>
+            </div>
+            <div class="md:w-1/2 text-center md:text-left order-1 md:order-2">
+                <h2 class="text-4xl md:text-5xl font-['Syne'] font-extrabold mb-6">Access on any device</h2>
+                <p class="text-xl text-gray-400 leading-relaxed">
+                    Check out your eanings on your mobile as well as Laptop, PC or any device with a browser.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (DoorDash Style Rounded Accordions) -->
+    <section class="py-24 px-6 section-divider">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-['Syne'] font-extrabold text-center mb-12">FAQ</h2>
+            <div class="space-y-3">
+                <details class="group bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+                    <summary
+                        class="p-6 text-xl font-bold flex justify-between items-center cursor-pointer list-none hover:bg-[#252525] transition-colors">
+                        What is GigLens?
+                        <span class="text-3xl font-light group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-400 text-lg border-t border-gray-800">
+                        GigLens is a tracking ecosystem for modern workers. We help you consolidate income from Upwork,
+                        Swiggy, Rapido, and more to see your true net profit.
+                    </div>
+                </details>
+
+                <details class="group bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+                    <summary
+                        class="p-6 text-xl font-bold flex justify-between items-center cursor-pointer list-none hover:bg-[#252525] transition-colors">
+                        How much does it cost?
+                        <span class="text-3xl font-light group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-400 text-lg border-t border-gray-800">
+                        GigLens operates on a freemium model. Start tracking for free today, and unlock advanced
+                        analytics and unlimited platform slots with a Pro subscription as your gig business grows.
+                    </div>
+                </details>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="mt-16 text-center">
+                <p class="text-lg mb-6 text-gray-300">Ready to maximize your earnings? Enter your email to start.</p>
+                <div
+                    class="flex flex-col md:flex-row items-center justify-center gap-3 bg-white p-2 rounded-2xl md:rounded-full">
+                    <input type="email" placeholder="Email address"
+                        class="w-full md:flex-1 px-6 py-4 text-black outline-none rounded-full">
+                    <a href="/"
+                        class="w-full md:w-auto bg-[#EB1700] text-white px-10 py-4 cta-pill font-bold text-lg hover:bg-red-700 transition-all">
+                        GET STARTED >
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-12 text-gray-500 max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+            <div class="space-y-3">
+                <h4 class="text-white font-bold mb-4">Platform</h4>
+                <a href="#" class="block hover:underline">Dashboard</a>
+                <a href="#" class="block hover:underline">Mobile App</a>
+                <a href="#" class="block hover:underline">Security</a>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold mb-4">Resources</h4>
+                <a href="#" class="block hover:underline">Help Center</a>
+                <a href="#" class="block hover:underline">Earnings Guide</a>
+                <a href="#" class="block hover:underline">Tax Basics</a>
+            </div>
+        </div>
+        <div class="pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm">© 2026 GigLens India. Built for the gig economy.</p>
+            <div class="flex gap-6">
+                <span class="text-xs">SPPU Computer Engineering Portfolio Project</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
